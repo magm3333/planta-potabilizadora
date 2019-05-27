@@ -13,4 +13,5 @@ HELP.md
 
 ### My own stuff ###
 tags
-/src/main/resources/static/lib/*
+/src/main/resources/static/*
+
