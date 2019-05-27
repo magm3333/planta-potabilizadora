@@ -1,10 +1,11 @@
-package com.coop.web;
+package ar.com.jsl.plantapotabilizadora.web;
 
 import org.json.JSONObject;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 
-import com.coop.model.Usuario;
+import ar.com.jsl.plantapotabilizadora.model.Usuario;
+
 
 public class BaseRestService {
 

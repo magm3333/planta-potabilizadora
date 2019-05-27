@@ -1,8 +1,9 @@
-package com.coop.business;
+package ar.com.jsl.plantapotabilizadora.business;
 
 import java.util.List;
 
-import com.coop.model.Usuario;
+import ar.com.jsl.plantapotabilizadora.model.Usuario;
+
 
 public interface IUsuarioBusiness {
 

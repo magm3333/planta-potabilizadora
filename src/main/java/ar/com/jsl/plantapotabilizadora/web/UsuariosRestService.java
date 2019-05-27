@@ -1,4 +1,4 @@
-package com.coop.web;
+package ar.com.jsl.plantapotabilizadora.web;
 
 import java.util.List;
 
@@ -16,10 +16,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.coop.business.BusinessException;
-import com.coop.business.IUsuarioBusiness;
-import com.coop.business.NotFoundException;
-import com.coop.model.Usuario;
+import ar.com.jsl.plantapotabilizadora.business.BusinessException;
+import ar.com.jsl.plantapotabilizadora.business.IUsuarioBusiness;
+import ar.com.jsl.plantapotabilizadora.business.NotFoundException;
+import ar.com.jsl.plantapotabilizadora.model.Usuario;
+
 
 @RestController
 @RequestMapping(Constantes.URL_USUARIOS)

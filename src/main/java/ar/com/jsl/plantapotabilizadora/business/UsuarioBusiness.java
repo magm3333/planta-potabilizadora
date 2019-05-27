@@ -1,4 +1,4 @@
-package com.coop.business;
+package ar.com.jsl.plantapotabilizadora.business;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,9 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.coop.model.Usuario;
-import com.coop.model.persistence.UsuarioRepository;
+import ar.com.jsl.plantapotabilizadora.model.Usuario;
+import ar.com.jsl.plantapotabilizadora.model.persistence.UsuarioRepository;
+
 
 @Service
 public class UsuarioBusiness implements IUsuarioBusiness {

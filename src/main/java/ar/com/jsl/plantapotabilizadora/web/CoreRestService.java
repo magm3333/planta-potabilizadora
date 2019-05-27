@@ -1,4 +1,4 @@
-package com.coop.web;
+package ar.com.jsl.plantapotabilizadora.web;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

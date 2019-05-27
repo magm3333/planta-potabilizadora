@@ -1,4 +1,4 @@
-package com.coop;
+package ar.com.jsl.plantapotabilizadora;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -6,9 +6,10 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.coop.business.BusinessException;
-import com.coop.business.IUsuarioBusiness;
-import com.coop.business.NotFoundException;
+import ar.com.jsl.plantapotabilizadora.business.BusinessException;
+import ar.com.jsl.plantapotabilizadora.business.IUsuarioBusiness;
+import ar.com.jsl.plantapotabilizadora.business.NotFoundException;
+
 
 @Service
 public class PersistenceUserDetailsService implements UserDetailsService {

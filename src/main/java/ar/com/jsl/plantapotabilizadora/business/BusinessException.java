@@ -1,4 +1,4 @@
-package com.coop.business;
+package ar.com.jsl.plantapotabilizadora.business;
 
 public class BusinessException extends Exception {
 

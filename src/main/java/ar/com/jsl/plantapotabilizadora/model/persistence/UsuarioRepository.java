@@ -1,11 +1,12 @@
-package com.coop.model.persistence;
+package ar.com.jsl.plantapotabilizadora.model.persistence;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.coop.model.Usuario;
+import ar.com.jsl.plantapotabilizadora.model.Usuario;
+
 
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {

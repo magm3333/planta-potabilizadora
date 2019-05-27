@@ -1,4 +1,4 @@
-package com.coop.web;
+package ar.com.jsl.plantapotabilizadora.web;
 
 public final class Constantes {
 

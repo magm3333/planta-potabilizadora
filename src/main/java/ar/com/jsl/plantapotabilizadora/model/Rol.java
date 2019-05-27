@@ -1,4 +1,4 @@
-package com.coop.model;
+package ar.com.jsl.plantapotabilizadora.model;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package com.coop;
+package ar.com.jsl.plantapotabilizadora;
 
 import java.util.Collections;
 
