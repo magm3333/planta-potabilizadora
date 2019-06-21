@@ -1,5 +1,5 @@
 HELP.md
-/target/
+/target/*
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
@@ -13,5 +13,6 @@ HELP.md
 
 ### My own stuff ###
 tags
-/src/main/resources/static/*
-
+/src/main/resources/static/lib/*
+/logs/*
+.vscode/*

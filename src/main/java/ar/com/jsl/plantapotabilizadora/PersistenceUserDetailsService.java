@@ -10,24 +10,22 @@ import ar.com.jsl.plantapotabilizadora.business.BusinessException;
 import ar.com.jsl.plantapotabilizadora.business.IUsuarioBusiness;
 import ar.com.jsl.plantapotabilizadora.business.NotFoundException;
 
-
 @Service
 public class PersistenceUserDetailsService implements UserDetailsService {
 
 	@Autowired
 	private IUsuarioBusiness usuarioBusiness;
-	
+
 	@Override
-	public UserDetails loadUserByUsername(String username) 
-			throws UsernameNotFoundException {
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		try {
 			return usuarioBusiness.load(username);
 		} catch (BusinessException e) {
-			throw new RuntimeException(e.getMessage(),e);
+			throw new RuntimeException(e.getMessage(), e);
 		} catch (NotFoundException e) {
-			throw new UsernameNotFoundException(e.getMessage(),e);
+			throw new UsernameNotFoundException(e.getMessage(), e);
 		}
-		
+
 	}
 
 }

@@ -4,7 +4,6 @@ import java.util.List;
 
 import ar.com.jsl.plantapotabilizadora.model.Usuario;
 
-
 public interface IUsuarioBusiness {
 
 	public Usuario load(long id) throws BusinessException, NotFoundException;

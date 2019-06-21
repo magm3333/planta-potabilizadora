@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import ar.com.jsl.plantapotabilizadora.model.Usuario;
 import ar.com.jsl.plantapotabilizadora.model.persistence.UsuarioRepository;
 
-
 @Service
 public class UsuarioBusiness implements IUsuarioBusiness {
 
@@ -32,7 +31,6 @@ public class UsuarioBusiness implements IUsuarioBusiness {
 
 	@Override
 	public Usuario add(Usuario usuario) throws BusinessException {
-
 		try {
 			return usuarioDAO.save(usuario);
 		} catch (Exception e) {
@@ -52,7 +50,6 @@ public class UsuarioBusiness implements IUsuarioBusiness {
 
 	@Override
 	public Usuario update(Usuario usuario) throws BusinessException {
-
 		try {
 			return usuarioDAO.save(usuario);
 		} catch (Exception e) {
@@ -87,14 +84,13 @@ public class UsuarioBusiness implements IUsuarioBusiness {
 	public Usuario load(String usernameOrEmail) throws BusinessException, NotFoundException {
 		List<Usuario> l;
 		try {
-			l=usuarioDAO.findByUsernameOrEmail(usernameOrEmail, usernameOrEmail);
+			l = usuarioDAO.findByUsernameOrEmail(usernameOrEmail, usernameOrEmail);
 		} catch (Exception e) {
-			throw new BusinessException(e.getMessage(),e);
+			throw new BusinessException(e.getMessage(), e);
 		}
-		if(l.size()==0)
-			throw new NotFoundException("No se encuentra el usuari@ con nombre/email="+usernameOrEmail);
-		
+		if (l.size() == 0)
+			throw new NotFoundException("No se encuentra el usuari@ con nombre/email=" + usernameOrEmail);
+
 		return l.get(0);
 	}
-
 }
